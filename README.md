@@ -1,11 +1,42 @@
 
 # Next.js 보일러 플레이트 만들기
-## Getting Started
 ```
 Typescript
 ReactJS + Next.js
 TailwindCss + LucidReact + Shardcn
 ```
+```
+next-starter
+├─ .npmrc
+├─ .nvmrc
+├─ .prettierignore
+├─ .prettierrc
+├─ README.md
+├─ components.json
+├─ eslint.config.mjs
+├─ next.config.ts
+├─ package.json
+├─ pnpm-lock.yaml
+├─ postcss.config.mjs
+├─ public
+├─ src
+│  ├─ app
+│  │  ├─ dashboard
+│  │  ├─ favicon.ico
+│  │  ├─ globals.css
+│  │  ├─ layout.tsx
+│  │  └─ page.tsx
+│  ├─ components
+│  │  └─ ui
+│  ├─ hooks
+│  └─ lib
+└─ tsconfig.json
+```
+ 
+--- 
+
+## Getting Started
+
 ### 0. pnpm 설치 
 ```
 npm install -g pnpm
@@ -14,8 +45,10 @@ npm install -g pnpm
 작업공간을 만들고 원하는 폴더 또는 명령어 입력하여 프로젝트 명 입력하여 생성가능
 
 ```
+# 여기서는 원하는 폴더를 만들고 해당 폴더에서 Next 앱을 생성함.
 pnpm dlx create-next-app@latest .
 ```
+
 ```
 ? Would you like to use TypeScript? › Yes
 ? Which linter would you like to use? > ESLint
@@ -52,7 +85,7 @@ pnpm add -D @trivago/prettier-plugin-sort-imports
 ```
 
 ### 3-2. .prettierrc 파일 생성 (root 위치에)
--> 이 파일은 Prettier가 프로젝트의 코드를 어떤 규칙에 따라 정렬하고 포맷팅할지 정의하는 데 사용되며 개발자 개개인의 코드 스타일이 아닌, 프로젝트 전체에 적용되는 통일된 코드 스타일을 강제할 때 매우 유용함.
+이 파일은 Prettier가 프로젝트의 코드를 어떤 규칙에 따라 정렬하고 포맷팅할지 정의하는 데 사용되며 개발자 개개인의 코드 스타일이 아닌, 프로젝트 전체에 적용되는 통일된 코드 스타일을 강제할 때 매우 유용함.
 ```
 {
   "singleQuote": true,
